@@ -21,8 +21,8 @@
 				],
 				"policy": {
 					"timeout": "0.12:00:00",
-					"retry": 10,
-					"retryIntervalInSeconds": 40,
+					"retry": 20,
+					"retryIntervalInSeconds": 45,
 					"secureOutput": false,
 					"secureInput": false
 				},
