@@ -65,7 +65,15 @@
 				"outputs": [
 					{
 						"referenceName": "Parquet1",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"Container": "bronze",
+							"folder": "users",
+							"file": {
+								"value": "@concat (pipeline().parameters.tble '_' variables('current'))",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			},
